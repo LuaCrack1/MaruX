@@ -6226,7 +6226,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
             Hop()
             Fluent:Notify({
-                Title = "NINO Hub",
+                Title = "Đạt Thg Hub",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6234,7 +6234,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
             Hop()
             Fluent:Notify({
-                Title = "NINO Hub",
+                Title = "Đạt Thg Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6242,7 +6242,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
             Hop()
             Fluent:Notify({
-                Title = "NINO Hub",
+                Title = "Đạt Thg Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
