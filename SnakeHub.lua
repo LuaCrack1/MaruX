@@ -6277,17 +6277,24 @@ end)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
 local gui = Instance.new("ScreenGui")
-local label = Instance.new("TextLabel")
-label.BackgroundColor3 = Color3.new(1, 1, 1) -- white background
-label.BackgroundTransparency = 0.5
-label.BorderSizePixel = 0
-label.Font = Enum.Font.SourceSans
-label.FontSize = Enum.FontSize.Size24
-label.Text = "Welcome to Snake Hub"
-label.TextColor3 = Color3.new(1, 0, 0) -- red text
-label.Size = UDim2.new(0, 200, 0, 50)
-label.Position = UDim2.new(0, 0, 0, 0)
-label.Parent = gui
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Image = "rbxassetid://skybackground" -- Replace with your sky background image asset ID
+imageLabel.Size = UDim2.new(1, 0, 1, 0)
+imageLabel.Position = UDim2.new(0, 0, 0, 0)
+imageLabel.ScaleType = Enum.ScaleType.Crop
+imageLabel.Parent = gui
+
+local textLabel = Instance.new("TextLabel")
+textLabel.Font = Enum.Font.SourceSans
+textLabel.FontSize = Enum.FontSize.Size24
+textLabel.Text = "Welcome to Snake Hub"
+textLabel.TextColor3 = Color3.new(1, 1, 1) -- White text
+textLabel.TextStrokeColor3 = Color3.new(0, 0, 0) -- Black text stroke
+textLabel.TextStrokeTransparency = 0
+textLabel.TextXAlignment = Enum.TextXAlignment.Left
+textLabel.Size = UDim2.new(0, 200, 0, 50)
+textLabel.Position = UDim2.new(0, 0, 0, 0)
+textLabel.Parent = imageLabel
+
 gui.Parent = game.Players.LocalPlayer.PlayerGui
