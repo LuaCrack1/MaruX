@@ -6050,7 +6050,7 @@ Tabs.Shop:AddButton({
 --misc
 
 Tabs.Misc:AddButton({
-	Title = "Rejoin Server",
+	Title = "Vào Lại Server",
 	Description = "",
 	Callback = function()
 		game:GetService("TeleportService"):Teleport(game.PlaceId, game:GetService("Players").LocalPlayer)
@@ -6059,7 +6059,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Hop Server",
+	Title = "Chuyển Server",
 	Description = "",
 	Callback = function()
 		Hop()
@@ -6131,7 +6131,7 @@ end
 local Mastery = Tabs.Misc:AddSection("Open Ui")
 
 Tabs.Misc:AddButton({
-	Title = "Devil Shop",
+	Title = "Cửa Hàng Trái Ác Quỷ",
 	Description = "",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
@@ -6142,7 +6142,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Color Haki",
+	Title = "Màu Haki",
 	Description = "",
 	Callback = function()
 		game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
@@ -6152,7 +6152,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Title Name",
+	Title = "Tên Danh Hiệu",
 	Description = "",
 	Callback = function()
 		local args = {
@@ -6166,7 +6166,7 @@ Tabs.Misc:AddButton({
 
 
 Tabs.Misc:AddButton({
-	Title = "Open Awakening",
+	Title = "Mở Thức Tỉnh",
 	Description = "",
 	Callback = function()
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true
@@ -6180,8 +6180,8 @@ local Mastery = Tabs.Misc:AddSection("Trolling")
 
 
 Tabs.Misc:AddButton({
-	Title = "Rain Fruit",
-	Description = "Rain fruit (Fake)",
+	Title = "Mưa Trái Ác Quỷ",
+	Description = "Mưa Trái Ác Quỷ (Giả)",
 	Callback = function()
         for i, v in pairs(game:GetObjects("rbxassetid://15970729030")[1]:GetChildren()) do
             v.Parent = game.Workspace.Map
@@ -6206,12 +6206,12 @@ Tabs.Misc:AddButton({
 --Hop
 
 if First_Sea or Second_Sea then
-    local Mastery = Tabs.Hop:AddSection("Thid Sea Please !!!")
+    local Mastery = Tabs.Hop:AddSection("Làm ơn lên Sea 3 !!!")
 
 end
 
 if Third_Sea then
-local ToggleFindMoon = Tabs.Hop:AddToggle("ToggleFindMoon", {Title = "Find Full Moon", Default = false })
+local ToggleFindMoon = Tabs.Hop:AddToggle("ToggleFindMoon", {Title = "Tìm Trăng Tròn", Default = false })
 ToggleFindMoon:OnChanged(function(Value)
     _G.AutoFindMoon = Value
 end)
@@ -6255,7 +6255,7 @@ spawn(function()
 end)
 
 
-local ToggleMirageIsland = Tabs.Hop:AddToggle("ToggleMirageIsland", {Title = "Find Mirage Island", Default = false })
+local ToggleMirageIsland = Tabs.Hop:AddToggle("ToggleMirageIsland", {Title = "Tìm Đảo Bí Ẩn", Default = false })
 ToggleMirageIsland:OnChanged(function(Value)
     _G.FindMirageIsland = Value
 end)
