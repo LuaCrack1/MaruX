@@ -6277,8 +6277,17 @@ end)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-function love.draw()
-    love.graphics.setColor(255, 255, 255) -- white text
-    love.graphics.setFont(love.graphics.newFont(24))
-    love.graphics.print("Chào Mừng Đến Snake Hub", 100, 100)
-end
+game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
+local gui = Instance.new("ScreenGui")
+local label = Instance.new("TextLabel")
+label.BackgroundColor3 = Color3.new(1, 1, 1) -- white background
+label.BackgroundTransparency = 0.5
+label.BorderSizePixel = 0
+label.Font = Enum.Font.SourceSans
+label.FontSize = Enum.FontSize.Size24
+label.Text = "Welcome to Snake Hub"
+label.TextColor3 = Color3.new(1, 0, 0) -- red text
+label.Size = UDim2.new(0, 200, 0, 50)
+label.Position = UDim2.new(0, 0, 0, 0)
+label.Parent = gui
+gui.Parent = game.Players.LocalPlayer.PlayerGui
