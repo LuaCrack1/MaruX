@@ -6277,3 +6277,8 @@ end)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+function love.draw()
+    love.graphics.setColor(255, 0, 0) -- white text
+    love.graphics.setFont(love.graphics.newFont(24))
+    love.graphics.print("Chào Mừng Đến Đạt Thg Hub", 100, 100)
+end
