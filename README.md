@@ -1,1 +1,1 @@
-# Made by Eric & Đạt Thg
+# Made by Eric 
