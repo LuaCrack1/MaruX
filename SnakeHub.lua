@@ -5,8 +5,8 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local Window = Fluent:CreateWindow({
     --ai skid thì nhớ đổi tên =)
     --táo hub , aniee hub :>
-    Title = "Đạt Thg Hub",
-    SubTitle = "Made by Eric & Đạt Thg",
+    Title = "Snake Hub",
+    SubTitle = "Join Server : https://discord.gg/dJZW8xru",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -6226,7 +6226,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
             Hop()
             Fluent:Notify({
-                Title = "Đạt Thg Hub",
+                Title = "Snake Hub",
                 Content = "Turn Off Find Full Moon...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6234,7 +6234,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
             Hop()
             Fluent:Notify({
-                Title = "Đạt Thg Hub",
+                Title = "Snake Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6242,7 +6242,7 @@ spawn(function()
         elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
             Hop()
             Fluent:Notify({
-                Title = "Đạt Thg Hub",
+                Title = "Snake Hub",
                 Content = "Hop...",
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
@@ -6277,3 +6277,8 @@ end)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
+function love.draw()
+    love.graphics.setColor(255, 255, 255) -- white text
+    love.graphics.setFont(love.graphics.newFont(24))
+    love.graphics.print("Chào Mừng Đến Snake Hub", 100, 100)
+end
