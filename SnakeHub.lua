@@ -5,7 +5,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 local Window = Fluent:CreateWindow({
     --ai skid thì nhớ đổi tên =)
     --táo hub , aniee hub :>
-    Title = "Snake Hub",
+    Title = "Butter Hub",
     SubTitle = "Join Server : https://discord.gg/dJZW8xru",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
@@ -6277,24 +6277,3 @@ end)
 end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
-local gui = Instance.new("ScreenGui")
-local imageLabel = Instance.new("ImageLabel")
-imageLabel.Image = "rbxassetid://skybackground" -- Replace with your sky background image asset ID
-imageLabel.Size = UDim2.new(1, 0, 1, 0)
-imageLabel.Position = UDim2.new(0, 0, 0, 0)
-imageLabel.ScaleType = Enum.ScaleType.Crop
-imageLabel.Parent = gui
-
-local textLabel = Instance.new("TextLabel")
-textLabel.Font = Enum.Font.SourceSans
-textLabel.FontSize = Enum.FontSize.Size24
-textLabel.Text = "Welcome to Snake Hub"
-textLabel.TextColor3 = Color3.new(1, 1, 1) -- White text
-textLabel.TextStrokeColor3 = Color3.new(0, 0, 0) -- Black text stroke
-textLabel.TextStrokeTransparency = 0
-textLabel.TextXAlignment = Enum.TextXAlignment.Left
-textLabel.Size = UDim2.new(0, 200, 0, 50)
-textLabel.Position = UDim2.new(0, 0, 0, 0)
-textLabel.Parent = imageLabel
-
-gui.Parent = game.Players.LocalPlayer.PlayerGui
