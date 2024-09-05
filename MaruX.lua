@@ -6278,13 +6278,13 @@ end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=9709149052";
+      Icon = "http://www.roblox.com/asset/?id=106454529746338";
       Title = "Maru X", 
       Text = "Welcome to Maru X!";
 })
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=9709149052";
+      Icon = "http://www.roblox.com/asset/?id=106454529746338";
       Title = "Maru X", 
       Text = "Made by Eric (Scripter)";
 })
