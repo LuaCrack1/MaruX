@@ -6,7 +6,7 @@ local Window = Fluent:CreateWindow({
     --ai skid thì nhớ đổi tên =)
     --táo hub , aniee hub :>
     Title = "Maru X",
-    SubTitle = "Join Server : https://discord.gg/dJZW8xru",
+    SubTitle = "Made by Eric",
     TabWidth = 160,
     Size = UDim2.fromOffset(530, 350),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
@@ -6286,7 +6286,7 @@ wait(3)
 game.StarterGui:SetCore("SendNotification", {
       Icon = "rblxassetid://106454529746338";
       Title = "Maru X", 
-      Text = "Made by Eric (Scripter)";
+      Text = "Made by Eric";
 })
 local ChatService = game:GetService("Chat")
 
