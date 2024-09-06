@@ -6167,7 +6167,7 @@ Tabs.Misc:AddButton({
 
 Tabs.Misc:AddButton({
 	Title = "Open Awakening",
-	Description = "",
+	Description = "Mở Thức Tỉnh DF",
 	Callback = function()
         game:GetService("Players").LocalPlayer.PlayerGui.Main.AwakeningToggler.Visible = true
 	end
@@ -6183,7 +6183,7 @@ Tabs.Misc:AddButton({
 	Title = "Rain Fruit",
 	Description = "Rain fruit (Fake)",
 	Callback = function()
-        for i, v in pairs(game:GetObjects("rbxassetid://15970729030")[1]:GetChildren()) do
+        for i, v in pairs(game:GetObjects("rblxassetid://106454529746338")[1]:GetChildren()) do
             v.Parent = game.Workspace.Map
             v:MoveTo(game.Players.LocalPlayer.Character.PrimaryPart.Position + Vector3.new(math.random(-50, 50), 100, math.random(-50, 50)))
             if v.Fruit:FindFirstChild("AnimationController") then
@@ -6239,7 +6239,7 @@ spawn(function()
                 SubContent = "", -- Optional
                 Duration = 5 -- Set to nil to make the notification not disappear
             })
-        elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
+        elseif game:GetService("Lighting").Sky.MoonTextureId=="rblxassetid://106454529746338" then
             Hop()
             Fluent:Notify({
                 Title = "Maru X",
@@ -6278,13 +6278,13 @@ end
 
 ------------------------------------------------------------------------------------------------------------------------------------------
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=106454529746338";
+      Icon = "rblxassetid://106454529746338";
       Title = "Maru X", 
       Text = "Welcome to Maru X!";
 })
 wait(3)
 game.StarterGui:SetCore("SendNotification", {
-      Icon = "http://www.roblox.com/asset/?id=106454529746338";
+      Icon = "rblxassetid://106454529746338";
       Title = "Maru X", 
       Text = "Made by Eric (Scripter)";
 })
