@@ -6132,7 +6132,7 @@ local Mastery = Tabs.Misc:AddSection("Open Ui")
 
 Tabs.Misc:AddButton({
 	Title = "Devil Shop",
-	Description = "",
+	Description = "Cửa Hàng Trái",
 	Callback = function()
 		game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("GetFruits")
         game:GetService("Players").LocalPlayer.PlayerGui.Main.FruitShop.Visible = true
@@ -6143,7 +6143,7 @@ Tabs.Misc:AddButton({
 
 Tabs.Misc:AddButton({
 	Title = "Color Haki",
-	Description = "",
+	Description = "Mở Màu Haki",
 	Callback = function()
 		game.Players.localPlayer.PlayerGui.Main.Colors.Visible = true
 	end
@@ -6153,7 +6153,7 @@ Tabs.Misc:AddButton({
 
 Tabs.Misc:AddButton({
 	Title = "Title Name",
-	Description = "",
+	Description = "Mở Tên Danh Hiệu",
 	Callback = function()
 		local args = {
 			[1] = "getTitles"
@@ -6281,12 +6281,3 @@ game.StarterGui:SetCore("SendNotification", {
       Icon = "rblxassetid://106454529746338";
       Title = "Maru X", 
       Text = "Welcome to Maru X!";
-})
-wait(3)
-game.StarterGui:SetCore("SendNotification", {
-      Icon = "rblxassetid://106454529746338";
-      Title = "Maru X", 
-      Text = "Made by Eric";
-})
-local ChatService = game:GetService("Chat")
-
