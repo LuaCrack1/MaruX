@@ -5226,10 +5226,25 @@ spawn(function()
         end
     end
 end)
-
-
-
-
+Misc:AddToggle("Esp Gear [Beta]", false, function(value)
+    GearESP = value
+        while GearESP do wait()
+            UpdateGeaESP() 
+        end
+    end)
+Misc:AddToggle("Tự Động Bật V3",_G.AutoAgility,function(value)
+        _G.AutoAgility = value
+    end)
+    
+    spawn(function()
+        pcall(function()
+            while wait() do
+                if _G.AutoAgility then
+                    game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("ActivateAbility")
+                end
+            end
+        end)
+    end)
 
 
 
